@@ -47,7 +47,7 @@ class(data$smoker_num)
 
 #convert numeric gender code to factor
 data$smoker_num <- as.factor(data$smoker_num)
-class(data$smoerr_num)
+class(data$smoker_num)
 
 
 
