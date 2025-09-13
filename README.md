@@ -1,4 +1,3 @@
-
 # 🚀 AI & Omics Research Internship 2025
 
 ## 📚 Module I – Class Ib
@@ -19,13 +18,6 @@ This session introduced **basic R programming**, data handling, and factor conve
 * 💾 Saved the cleaned dataset.
 * 💻 Stored the work in **`class_Ib.R`**.
 
-### ⚡ Usage Guide
-
-1. Open **`class_Ib.R`** in RStudio.
-2. Set the working directory to the project folder.
-3. Ensure **`patient_info.csv`** is present.
-4. Run the script step-by-step.
-
 ---
 
 ## 📚 Module I – Class Ic
@@ -45,10 +37,25 @@ This session built upon **Class Ib**, adding conditional logic and automated fac
 * 🆚 Compared **original** vs **modified** dataset structures.
 * 💾 Saved the workspace as **`clean_Ic.RData`**.
 
-### ⚡ Usage Guide
+---
 
-1. Open **`class_Ic.R`** in RStudio.
-2. Set the working directory to the project folder.
-3. Load both datasets (**`patient_info.csv`**, **`Metadata.csv`**).
-4. Run each section step-by-step.
-5. Check structures using `str()` and view tables with `View()`.
+## 📚 Module I – Class II
+
+***Differential Gene Expression (DGE) Analysis with R***
+
+### 📝 Overview
+
+This session introduced **real-world data handling** using **gene expression datasets**.  
+The focus was on automating classification of genes as **Upregulated**, **Downregulated**, or **Not Significant**.
+
+### ✅ Key Learning Outcomes
+
+* 📂 Processed multiple files (**`DEGs_Data_1.csv`**, **`DEGs_Data_2.csv`**).
+* 🧪 Defined a **custom R function** `classify_gene()` to classify genes:
+  - `Upregulated` if `logFC > 1` & `padj < 0.05`  
+  - `Downregulated` if `logFC < -1` & `padj < 0.05`  
+  - `Not_Significant` otherwise
+* 🔍 Handled missing values (`padj` replaced with 1 if NA).
+* 🗂️ Stored results in an R list and exported **processed CSV files**.
+* 📊 Generated summary counts for **Upregulated**, **Downregulated**, and **Not Significant** genes.
+* 💻 Stored the work in **`class_II.R`**.
